@@ -1,0 +1,175 @@
+/* ============================================================
+   SANATH'S SAKURA MINIMAL PORTFOLIO — STYLES
+   Change colors below to customize the whole website.
+   Pink is used only for emphasis, tabs, section numbers and borders.
+   ============================================================ */
+:root {
+  --background: #ffffff;       /* HERE CHANGE MAIN BACKGROUND COLOR */
+  --soft-background: #faf9f9;  /* HERE CHANGE LIGHT GREY SECTION COLOR */
+  --rose: #b67b8f;            /* HERE CHANGE PINK ACCENT COLOR */
+  --rose-soft: #f3e7eb;       /* HERE CHANGE PINK NAVIGATION TAB COLOR */
+  --ink: #28282c;             /* HERE CHANGE TEXT COLOR */
+  --muted: #68686f;
+  --border: #eae6e8;
+  --radius: 16px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--ink); font-family: 'Segoe UI', 'Noto Sans JP', 'Yu Gothic', system-ui, sans-serif; line-height: 1.75; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+a:focus-visible,button:focus-visible { outline: 3px solid var(--rose); outline-offset: 4px; }
+.container { width: min(1110px, calc(100% - 52px)); margin: 0 auto; }
+.site-header { background: rgba(255,255,255,.97); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+.nav-wrap { display: flex; align-items: center; gap: 28px; min-height: 82px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; white-space: nowrap; }
+.brand-mark { background: #303035; color: white; padding: 8px 10px; border-radius: 7px; font-size: 16px; font-weight: 750; }
+.brand-name { font-size: 12px; font-weight: 750; letter-spacing: .08em; }
+.main-nav { display: flex; flex: 1; justify-content: center; gap: 5px; }
+.main-nav a { padding: 8px 11px; border-radius: 24px; font-size: 12px; text-decoration: none; white-space: nowrap; transition: background .15s; }
+.main-nav a:hover,.main-nav a:focus-visible { background: var(--rose-soft); }
+.language-switch { display: flex; background: #f6f5f5; padding: 4px; border: 1px solid var(--border); border-radius: 24px; white-space: nowrap; }
+.language-button { cursor: pointer; border: 0; background: transparent; color: #77757a; border-radius: 22px; padding: 7px 11px; font-size: 12px; }
+.language-button.is-active { color: #6e4053; background: var(--rose-soft); font-weight: 750; }
+.hero { display: grid; grid-template-columns: 1.3fr .7fr; gap: 60px; align-items: center; padding-top: 92px; padding-bottom: 76px; }
+.eyebrow,.section-number { font-size: 11px; text-transform: uppercase; letter-spacing: .13em; font-weight: 800; color: var(--rose); }
+h1,h2,h3,p { margin-top: 0; } h1 { font-size: clamp(50px, 6vw, 83px); letter-spacing: -.055em; line-height: 1.07; margin-bottom: 25px; } h2 { font-size: clamp(27px,3.3vw,42px); letter-spacing: -.035em; line-height: 1.3; } h3 { font-size: 19px; line-height: 1.4; }
+.rose-dot { color: var(--rose); }
+.hero-subtitle { font-size: 20px; color: #47464b; max-width: 590px; }
+.hero-school { color: var(--muted); font-size: 13px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 29px; }
+.button { text-decoration: none; padding: 11px 20px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; min-height: 46px; }
+.button-dark { background: #2d2d33; color: white; } .button-dark:hover { background: #4b4046; }
+.button-outline { border: 1px solid #d5cbd0; } .button-outline:hover { background: var(--rose-soft); }
+.portrait-frame { background: #f6f3f3; border: 1px solid var(--border); border-radius: 19px; height: 390px; position: relative; overflow: hidden; }
+.portrait-frame img { width: 100%; height: 100%; object-fit: cover; }
+.portrait-caption { position: absolute; bottom: 12px; left: 15px; color: #806a72; background: rgba(255,255,255,.85); padding: 4px 9px; border-radius: 6px; font-size: 10px; letter-spacing: .1em; }
+.image-placeholder { width: 100%; height: 100%; min-height: 160px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; color: #9a9095; padding: 20px; text-align: center; font-size: 12px; }
+.image-placeholder[hidden],img[hidden] { display: none !important; }
+.image-placeholder span:first-child { font-size: 42px; line-height: 1; color: #b69baa; }
+.portrait-placeholder { min-height: 390px; }
+.metric-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+.metric { background: #faf9f9; border: 1px solid #f0eded; border-radius: 12px; padding: 24px 10px; text-align: center; }
+.metric strong { display: block; font-size: 27px; font-weight: 750; line-height: 1.3; }
+.metric span { color: var(--muted); font-size: 11px; letter-spacing: .07em; }
+.section { padding-top: 93px; padding-bottom: 93px; scroll-margin-top: 82px; }
+.section-soft { background: var(--soft-background); }
+.section-head { margin-bottom: 31px; }
+.section-head h2 { margin-bottom: 9px; }
+.section-description { color: var(--muted); font-size: 13px; }
+.lead { font-size: 18px; max-width: 900px; color: #48494c; }
+.about-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 32px; }
+.about-facts p { border-top: 1px solid var(--border); padding-top: 15px; }
+.about-facts span { color: var(--rose); font-weight: 700; display: block; font-size: 12px; margin-bottom: 5px; }
+.about-facts strong { font-size: 13px; font-weight: 600; }
+.skills-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 15px; }
+.skill-block { background: #fff; border: 1px solid var(--border); border-radius: 13px; padding: 23px; }
+.skill-block h3 { margin-bottom: 8px; font-size: 16px; }
+.skill-block p { color: var(--muted); font-size: 13px; margin: 0; }
+.card-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }
+.card-clickable { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: block; text-decoration: none; box-shadow: 0 4px 24px rgba(30,20,24,.025); transition: transform .2s,box-shadow .2s,border-color .2s; }
+.card-clickable:hover { transform: translateY(-4px); border-color: #d7b9c4; box-shadow: 0 12px 32px rgba(74,45,56,.09); }
+.card-image { height: 235px; background: #f5f4f4; overflow: hidden; }
+.card-image img { width: 100%; height: 100%; object-fit: cover; }
+.card-content { padding: 25px; }
+.card-tags { text-transform: uppercase; font-size: 10px; font-weight: 750; letter-spacing: .07em; color: var(--rose); }
+.card-heading { display: flex; align-items: start; justify-content: space-between; gap: 12px; }
+.card-heading h3 { margin-bottom: 9px; }
+.card-heading span { color: var(--rose); font-size: 22px; }
+.card-content > p:not(.card-tags),.volunteer-layout p:not(.card-tags) { font-size: 14px; color: var(--muted); }
+.card-content .role { font-weight: 700; color: #525057 !important; }
+.card-link { display: inline-block; color: #9d6178; font-size: 12px; font-weight: 800; margin-top: 9px; }
+.volunteer-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: center; }
+.volunteer-image { background: #f7f6f6; height: 330px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); }
+.volunteer-image img { width: 100%; height: 100%; object-fit: cover; }
+.japanese-note { padding: 16px 19px; background: var(--rose-soft); border-radius: 12px; margin-top: 20px; }
+.japanese-note span { font-size: 11px; color: #9b6176; font-weight: 800; }
+.japanese-note p { margin: 5px 0 0; }
+footer { background: #29292e; color: #fff; scroll-margin-top: 82px; }
+.footer-inner { padding-top: 65px; padding-bottom: 55px; display: flex; justify-content: space-between; gap: 35px; }
+.footer-inner h2 { margin-bottom: 9px; }
+.footer-inner p:not(.section-number) { color: #d0cdd0; font-size: 13px; }
+.footer-links { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; align-content: center; }
+.footer-links a { border: 1px solid #66636a; border-radius: 8px; color: #f4eef1; text-decoration: none; padding: 10px 15px; font-size: 12px; min-width: 118px; }
+.footer-links a:hover { background: #55444d; }
+.footer-bottom { border-top: 1px solid #48474b; padding: 16px 0; color: #bdb7bd; font-size: 11px; }
+@media (max-width: 1020px) { .nav-wrap { flex-wrap: wrap; justify-content: space-between; padding: 12px 0; gap: 9px; } .main-nav { order: 3; flex-basis: 100%; justify-content: flex-start; overflow-x: auto; padding-bottom: 3px; } .hero { gap: 30px; } }
+@media (max-width: 710px) { .container { width: min(100% - 32px,1110px); } .hero { grid-template-columns: 1fr; padding-top: 54px; padding-bottom: 45px; } .portrait-frame { height: 280px; max-width: 380px; } .portrait-placeholder { min-height: 280px; } .metric-grid { grid-template-columns: repeat(2,1fr); } .card-grid,.skills-grid,.about-facts,.volunteer-layout { grid-template-columns: 1fr; } .section { padding-top: 64px; padding-bottom: 64px; } .volunteer-image { height: 260px; } .footer-inner { display: block; } .footer-links { margin-top: 24px; } .brand-name { font-size: 10px; } h1 { font-size: clamp(48px,11vw,68px); } }
+
+
+/* ============================================================
+   THEME BUTTON — NEXT TO JAPANESE / ENGLISH SWITCH
+   Edit these styles to change the button size and shape.
+   ============================================================ */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  min-height: 38px;
+  padding: 7px 12px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--soft-background);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  transition: background .2s ease, border-color .2s ease;
+}
+.theme-toggle:hover { background: var(--rose-soft); }
+.theme-icon { font-size: 17px; line-height: 1; }
+
+/* ============================================================
+   DARK MODE COLOR PALETTE — CHANGE COLORS HERE
+   Muted slate/charcoal backgrounds + restrained dusty pink.
+   Dark mode is the DEFAULT on first visit, but the toggle saves
+   each visitor's preference. Light theme above is unchanged.
+   ============================================================ */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #16181c;       /* MAIN DARK PAGE BACKGROUND */
+  --soft-background: #1e2025;  /* ALTERNATING DARK SECTIONS */
+  --rose: #e2a6bb;             /* PINK LABELS / ACCENTS */
+  --rose-soft: #382b34;        /* ACTIVE TAB / NOTE BACKGROUND */
+  --ink: #f1edf0;              /* MAIN TEXT */
+  --muted: #b9b4bb;            /* SECONDARY TEXT */
+  --border: #3a3a42;           /* CARD BORDERS */
+}
+
+/* All these elements originally had hard-coded LIGHT colors.
+   Override them so nothing remains bright when dark mode is on. */
+html[data-theme="dark"] .site-header { background: rgba(22,24,28,.97); }
+html[data-theme="dark"] .brand-mark { background: #e2a6bb; color: #201a1e; }
+html[data-theme="dark"] .language-switch { background: #292a31; }
+html[data-theme="dark"] .language-button { color: #c5bdc5; }
+html[data-theme="dark"] .language-button.is-active { background: var(--rose-soft); color: #f8dbe6; }
+html[data-theme="dark"] .hero-subtitle,
+html[data-theme="dark"] .lead { color: #ddd7dc; }
+html[data-theme="dark"] .button-dark { background: #e0a7bb; color: #201a20; }
+html[data-theme="dark"] .button-dark:hover { background: #f1c3d3; }
+html[data-theme="dark"] .button-outline { border-color: #6b5360; }
+html[data-theme="dark"] .button-outline:hover { background: var(--rose-soft); }
+html[data-theme="dark"] .portrait-frame,
+html[data-theme="dark"] .volunteer-image,
+html[data-theme="dark"] .card-image { background: #292b31; }
+html[data-theme="dark"] .portrait-caption { background: rgba(21,22,26,.88); color: #eee5e9; }
+html[data-theme="dark"] .image-placeholder { color: #c7b7c1; }
+html[data-theme="dark"] .image-placeholder span:first-child { color: #d8a3b8; }
+html[data-theme="dark"] .metric { background: #24262c; border-color: var(--border); }
+html[data-theme="dark"] .skill-block,
+html[data-theme="dark"] .card-clickable { background: #25262c; border-color: var(--border); }
+html[data-theme="dark"] .card-clickable:hover { border-color: #bb8298; box-shadow: 0 12px 32px rgba(0,0,0,.32); }
+html[data-theme="dark"] .card-content .role { color: #e4dce2 !important; }
+html[data-theme="dark"] .card-link { color: #e3afc3; }
+html[data-theme="dark"] .japanese-note { background: #352831; }
+html[data-theme="dark"] .japanese-note span { color: #f0b7c9; }
+html[data-theme="dark"] footer { background: #111216; }
+html[data-theme="dark"] .footer-inner p:not(.section-number) { color: #ccc4cd; }
+html[data-theme="dark"] .footer-links a { border-color: #685962; color: #f4eaf0; }
+html[data-theme="dark"] .footer-links a:hover { background: #40303c; }
+html[data-theme="dark"] .footer-bottom { border-color: #38343b; color: #b7acb4; }
+@media (max-width: 710px) {
+  .theme-toggle { padding: 6px 10px; min-height: 35px; }
+}

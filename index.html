@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!-- Request search engines not to index this portfolio -->
+<meta name="robots" content="noindex">
+
+  <!-- <meta name="description" content="Sanathkumar Desai — Electronics and Communication Engineering Portfolio"> -->
+  <title>Sanathkumar Desai | Engineering Portfolio</title>
+  <!-- THEME INITIALIZATION: Dark by default; remember visitor's preference.
+       Runs before the stylesheet to avoid a bright flash on page load. -->
+  <script>
+    try {
+      document.documentElement.dataset.theme =
+        localStorage.getItem('sanath-portfolio-theme') || 'dark';
+    } catch (error) {
+      document.documentElement.dataset.theme = 'dark';
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <!-- EDIT WEBSITE LANGUAGE: script.js contains all Japanese and English text. -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- ===== 1. TOP NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Sanathkumar Desai home"><span class="brand-mark">SD.</span><span class="brand-name">SANATHKUMAR DESAI</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" data-i18n="navHome">ホーム</a>
+        <a href="#projects" data-i18n="navProjects">プロジェクト</a>
+        <a href="#internships" data-i18n="navExperience">インターンシップ</a>
+        <a href="#volunteering" data-i18n="navActivities">活動</a>
+        <a href="#hobbies" data-i18n="navHobbies">趣味</a>
+        <a href="#contact" data-i18n="navContact">連絡先</a>
+      </nav>
+      <!-- THEME SWITCH: Click to toggle light/dark mode. Icon and label update in script.js. -->
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="ライトモードに切り替え" title="ライトモードに切り替え" aria-pressed="true">
+        <span class="theme-icon" aria-hidden="true">☀</span>
+        <span class="theme-label">ライト</span>
+      </button>
+      <!-- LANGUAGE SWITCH: Japanese is the default. Click English to translate all page text. -->
+      <div class="language-switch" role="group" aria-label="Select language">
+        <button class="language-button is-active" type="button" data-language="ja" aria-pressed="true">日本語</button>
+        <button class="language-button" type="button" data-language="en" aria-pressed="false">English</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 2. HERO / FIRST IMPRESSION ===== -->
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">電子通信工学 | ENGINEERING PORTFOLIO</p>
+        <h1>Sanathkumar<br>Desai<br>サナトクマル<span class="rose-dot">.</span></h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">組み込みシステム、ロボティクス、フィードバック制御に興味があります。</p>
+        <p class="hero-school" data-i18n="heroSchool">ニッテ・ミーナクシ工科大学 | ベンガルール</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects"><span data-i18n="exploreWork">プロジェクトを見る</span><span aria-hidden="true"> ↗</span></a>
+          <!-- RESUME LINK: Replace this with your own public PDF link if it changes. -->
+          <a class="button button-outline" href="assets/Sanathkumar_ECE-28.pdf" target="_blank" rel="noopener noreferrer" data-i18n="viewResume">履歴書を見る</a>
+        </div>
+      </div>
+      <div class="portrait-frame">
+        <!-- YOUR PHOTO: Save your photo as assets/images/profile.jpg. The placeholder will disappear. -->
+        <img src="assets/images/profile.jpeg" alt="Sanathkumar Desai portrait" data-i18n-alt="profileAlt" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="image-placeholder portrait-placeholder" hidden><span aria-hidden="true">✳</span><span data-i18n="addProfilePhoto">ここにプロフィール写真を追加</span></div>
+        <span class="portrait-caption">ENGINEERING · 2026</span>
+      </div>
+    </section>
+
+    <!-- ===== 3. QUICK FACTS ===== -->
+    <section class="container metric-grid" aria-label="Academic summary">
+      <div class="metric"><strong>8.67</strong><span>CGPA / 10</span></div>
+      <div class="metric"><strong>N5</strong><span>JLPT</span></div>
+      <div class="metric"><strong>2028</strong><span data-i18n="graduation">卒業予定</span></div>
+      <div class="metric"><strong>02</strong><span data-i18n="internshipCount">インターンシップ</span></div>
+    </section>
+
+    <!-- ===== 4. ABOUT / JAPANESE INTRODUCTION ===== -->
+    <section class="section container" id="about">
+      <div class="section-head"><p class="section-number">01 / ABOUT</p><h2 data-i18n="aboutTitle">自己紹介</h2></div>
+      <!-- HERE ENTER JAPANESE TEXT: Edit aboutBody.ja in script.js. -->
+      <!-- HERE ENTER ENGLISH TEXT: Edit aboutBody.en in script.js. -->
+      <p class="lead" data-i18n="aboutBody">電子通信工学を学ぶ大学生です。組み込みシステム、ロボティクス、制御に興味があります。</p>
+      <div class="about-facts"><p><span data-i18n="educationLabel">学歴</span><strong data-i18n="educationValue">Nitte Meenakshi Institute of Technology · B.E. Electronics and Communication Engineering</strong></p><p><span data-i18n="languageLabel">言語</span><strong data-i18n="languageValue">カンナダ語・英語・日本語（JLPT N5）</strong></p></div>
+    </section>
+
+    <!-- ===== 5. SKILLS — ALL BASED ON RESUME ===== -->
+    <section class="section section-soft" id="skills"><div class="container">
+      <div class="section-head"><p class="section-number">02 / SKILLS</p><h2 data-i18n="skillsTitle">技術スキル</h2></div>
+      <div class="skills-grid">
+        <div class="skill-block"><h3 data-i18n="skillProgramming">プログラミング</h3><p>C · Python (basic)</p></div>
+        <div class="skill-block"><h3 data-i18n="skillEmbedded">組み込み・RTOS</h3><p>ESP32 · STM32 · Arduino · FreeRTOS · Zephyr RTOS · ESP-IDF</p></div>
+        <div class="skill-block"><h3 data-i18n="skillTools">開発ツール・インターフェース</h3><p>STM32CubeIDE · STM32CubeMX · Arduino IDE · Git · I²C · I²S · PWM · UART / SPI (familiarity)</p></div>
+        <div class="skill-block"><h3 data-i18n="skillConcepts">関連分野</h3><p>PID / PD · IMU · Audio Sampling & Filtering · Motor Actuation</p></div>
+      </div>
+    </div></section>
+
+    <!-- ===== 6. PROJECT CARDS — CLICK WHOLE CARD TO OPEN GITHUB ===== -->
+    <section class="section container" id="projects">
+      <div class="section-head"><p class="section-number">03 / PROJECTS</p><h2 data-i18n="projectsTitle">プロジェクト</h2><p class="section-description" data-i18n="projectsHint">カードをクリックするとGitHubリポジトリが開きます。</p></div>
+      <div class="card-grid">
+        <!-- PROJECT 1 IMAGE: Save rover image as assets/images/rover.jpg. -->
+        <!-- PROJECT 1 GITHUB LINK: Replace href if repository changes. -->
+        <a class="project-card card-clickable" href="https://github.com/skd360/pid_heading_correction_rover" target="_blank" rel="noopener noreferrer" aria-label="Open PID rover GitHub repository">
+          <div class="card-image"><img src="assets/images/rover.jpeg" alt="PID controlled rover project" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="image-placeholder" hidden><span aria-hidden="true">▤</span><span data-i18n="addRoverImage">ここにローバーの写真を追加</span></div></div>
+          <div class="card-content"><p class="card-tags">ESP32 · C · ESP-IDF · FreeRTOS · BNO055</p><div class="card-heading"><h3 data-i18n="roverTitle">PID制御による静止時の方向補正ローバー</h3><span aria-hidden="true">↗</span></div><p data-i18n="roverDescription">BNO055のヨー角をI²Cで取得し、角度誤差と差動PWMで4モーターローバーの向きを補正しました。FreeRTOSタスクで処理を分け、配線・電源系も組み立てました。</p><span class="card-link" data-i18n="viewGithub">GitHubで見る ↗</span></div>
+        </a>
+        <!-- PROJECT 2 IMAGE: Save microphone image as assets/images/microphone.jpg. -->
+        <!-- PROJECT 2 GITHUB LINK: Replace href if repository changes. -->
+        <a class="project-card card-clickable" href="https://github.com/skd360/inmp441-esp32" target="_blank" rel="noopener noreferrer" aria-label="Open INMP441 audio GitHub repository">
+          <div class="card-image"><img src="assets/images/microphone.jpeg" alt="INMP441 microphone project" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="image-placeholder" hidden><span aria-hidden="true">◌</span><span data-i18n="addMicImage">ここにマイクの写真を追加</span></div></div>
+          <div class="card-content"><p class="card-tags">ESP32 · C · ESP-IDF · I²S · UDP</p><div class="card-heading"><h3 data-i18n="micTitle">INMP441 MEMSマイクの接続と音声処理</h3><span aria-hidden="true">↗</span></div><p data-i18n="micDescription">ESP32のI²Sを使ってPCM音声を取得し、UDPで送信しました。ハイパスフィルタや自動ゲイン制御（AGC）、バッファリングを試しました。</p><span class="card-link" data-i18n="viewGithub">GitHubで見る ↗</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== 7. INTERNSHIP CARDS — CLICK WHOLE CARD TO OPEN GOOGLE DRIVE PDF ===== -->
+    <section class="section section-soft" id="internships"><div class="container">
+      <div class="section-head"><p class="section-number">04 / EXPERIENCE</p><h2 data-i18n="internshipTitle">インターンシップ</h2><p class="section-description" data-i18n="internshipHint">カードをクリックするとプロジェクト説明PDFが開きます。</p></div>
+      <div class="card-grid">
+        <!-- MEDIGLINT IMAGE: Save as assets/images/mediglint.jpg. -->
+        <!-- MEDIGLINT DRIVE PDF: This URL came from internship heading link in uploaded resume. -->
+        <a class="experience-card card-clickable" href="https://drive.google.com/file/d/1b5YRUATF5zv1lJ4FN32KAmqIr4i9ebUu/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Open Mediglint internship PDF">
+          <div class="card-image"><img src="assets/images/mediglint.png" alt="Mediglint medicine dispenser internship project" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="image-placeholder" hidden><span aria-hidden="true">✳</span><span data-i18n="addMediglintImage">ここに医薬品ディスペンサーの写真を追加</span></div></div>
+          <div class="card-content"><p class="card-tags">FEB 2025 — AUG 2025</p><div class="card-heading"><h3>Mediglint LLP</h3><span aria-hidden="true">↗</span></div><p class="role" data-i18n="mediglintRole">ハードウェア設計インターン</p><p data-i18n="mediglintDescription">Onshapeで医薬品ディスペンサーを設計し、3Dプリントで試作・評価しました。ESP32、電磁石、リレーによる駆動と電子回路も担当し、最終設計はデザイン特許のために提出されました。</p><span class="card-link" data-i18n="openPdf">プロジェクトPDFを見る ↗</span></div>
+        </a>
+        <!-- NEWRRO IMAGE: Save as assets/images/newrro.jpg. -->
+        <!-- NEWRRO DRIVE PDF: This URL came from internship heading link in uploaded resume. -->
+        <a class="experience-card card-clickable" href="https://drive.google.com/file/d/1_gBQNcAfrNVxYa58KrwQZFb7NiyeTBgk/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Open NEWRRO internship PDF">
+          <div class="card-image"><img src="assets/images/newrro.png" alt="NEWRRO robotics internship project" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="image-placeholder" hidden><span aria-hidden="true">⌘</span><span data-i18n="addNewrroImage">ここにロボットカーの写真を追加</span></div></div>
+          <div class="card-content"><p class="card-tags">FEB 2025 — MAR 2025</p><div class="card-heading"><h3>NEWRRO TECH LLP</h3><span aria-hidden="true">↗</span></div><p class="role" data-i18n="newrroRole">ROS 2 ロボティクスインターン</p><p data-i18n="newrroDescription">ESP32とROS 2のシリアル通信ブリッジ、WebSocketを使ったキーボード遠隔操作を開発しました。社内ロボティクスライブラリのテストとシステム構成の文書化も支援しました。</p><span class="card-link" data-i18n="openPdf">プロジェクトPDFを見る ↗</span></div>
+        </a>
+      </div>
+    </div></section>
+
+
+<!-- ===== 8. VOLUNTEERING ===== -->
+<section class="section container" id="volunteering">
+
+  <div class="section-head">
+    <p class="section-number">05 / INTERNATIONAL EXPERIENCE</p>
+    <h2>Ōta TOKYO 2026</h2>
+  </div>
+
+  <div class="volunteer-layout">
+
+    <!-- OTA TOKYO IMAGE -->
+    <!-- Save event photo as assets/images/ota-tokyo.png -->
+    <div class="volunteer-image">
+      <img
+        src="assets/images/ota-tokyo.png"
+        alt="Ota Tokyo 2026 volunteering with Kanapon"
+        onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+      >
+
+      <div class="image-placeholder" hidden>
+        <span aria-hidden="true">✿</span>
+        <span data-i18n="addOtaImage">
+          ここにŌta TOKYOの写真を追加
+        </span>
+      </div>
+    </div>
+
+    <div>
+      <p class="card-tags">JAN 2026</p>
+
+      <!-- HEADING: Edit translations in script.js -->
+      <h3 data-i18n="volunteerRole">
+        カナポンさんの国際ゲストサポート
+      </h3>
+
+      <!-- DESCRIPTION: Edit translations in script.js -->
+      <p data-i18n="volunteerDescription">
+        約15,000人が参加したŌta TOKYO 2026で、
+        国際ゲスト管理チームの一員として、
+        日本人ゲストのカナポンさんをサポートしました。
+        スケジュールやステージへの移動を調整し、
+        雨による遅れにも対応しました。
+        また、観客との交流もサポートしました。
+      </p>
+
+      <div class="japanese-note">
+        <span data-i18n="japaneseNoteLabel">
+          日本語について
+        </span>
+
+        <p data-i18n="japaneseNote">
+          日本語能力試験（JLPT）N5に合格しました
+          （2026年7月試験）。
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== 9. HOBBIES & INTERESTS ===== -->
+<!-- This section appears after Ota Tokyo 2026. -->
+
+<section class="section section-soft" id="hobbies">
+  <div class="container">
+
+    <!-- SECTION HEADING -->
+    <div class="section-head">
+      <p class="section-number">
+        06 / HOBBIES & INTERESTS
+      </p>
+
+      <!-- Translated in script.js -->
+      <h2 data-i18n="hobbiesTitle">
+        趣味・興味
+      </h2>
+
+      <p class="section-description"
+         data-i18n="hobbiesIntro">
+        授業以外でも、ものづくりを楽しんでいます。
+      </p>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- ============================= -->
+      <!-- HOBBY 1: 3D PRINTING           -->
+      <!-- ============================= -->
+
+      <div class="project-card card-clickable">
+
+        <div class="card-image">
+
+          <!-- HERE ENTER IMAGE OF YOUR 3D PRINTER -->
+          <!-- Save the image as assets/images/3d-printer.jpg -->
+
+          <img
+            src="assets/images/3d-printer.jpeg"
+            alt="My 3D printer"
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+          >
+
+          <!-- Placeholder if the image is missing -->
+          <div class="image-placeholder" hidden>
+            <span aria-hidden="true">▤</span>
+            <span data-i18n="addPrinterImage">
+              ここに3Dプリンターの写真を追加
+            </span>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p class="card-tags">
+            3D PRINTING
+          </p>
+
+          <div class="card-heading">
+            <h3 data-i18n="printingTitle">
+              3Dプリンティング
+            </h3>
+          </div>
+
+          <!-- HERE ENTER JAPANESE / ENGLISH DESCRIPTION -->
+          <!-- Edit printingDescription in script.js -->
+
+          <p data-i18n="printingDescription">
+            アイデアを実際の形にすることが好きです。
+          </p>
+
+        </div>
+      </div>
+
+
+      <!-- ============================= -->
+      <!-- HOBBY 2: 3D CAD DESIGN         -->
+      <!-- ============================= -->
+
+      <!-- HERE ENTER YOUR PUBLIC ONSHAPE LINK -->
+      <!-- Replace the URL inside href below. -->
+
+      <a
+        class="project-card card-clickable"
+        href="https://drive.google.com/file/d/1traRQC7AddnX8Woh2vu0Pa-22YyKm9ED/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View my public Onshape CAD designs"
+      >
+
+        <div class="card-image">
+
+          <!-- HERE ENTER IMAGE OF YOUR CAD MODEL -->
+          <!-- Save as assets/images/cad-design.jpg -->
+
+          <img
+            src="assets/images/cad-design.png"
+            alt="3D CAD model designed in Onshape"
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+          >
+
+          <div class="image-placeholder" hidden>
+            <span aria-hidden="true">▤</span>
+            <span data-i18n="addCadImage">
+              ここにCADモデルの画像を追加
+            </span>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p class="card-tags">
+            ONSHAPE / CAD MODELLING
+          </p>
+
+          <div class="card-heading">
+
+            <h3 data-i18n="cadTitle">
+              3D CADデザイン
+            </h3>
+
+            <span aria-hidden="true">↗</span>
+
+          </div>
+
+          <!-- HERE ENTER JAPANESE / ENGLISH DESCRIPTION -->
+
+          <p data-i18n="cadDescription">
+            Onshapeで3Dモデルを設計しています。
+          </p>
+
+          <span class="card-link"
+                data-i18n="viewCad">
+            CADモデルを見る ↗
+          </span>
+
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- ===== 9. CONTACT — EDIT LINKS HERE ===== -->
+  <footer id="contact"><div class="container footer-inner"><div><p class="section-number">06 / CONTACT</p><h2 data-i18n="contactTitle">ご連絡はこちら</h2><p data-i18n="contactDescription">プロジェクトやエンジニアリングについて、ぜひご連絡ください。</p></div>
+    <div class="footer-links">
+      <!-- EMAIL: Edit email address in mailto link if needed. -->
+      <a href="mailto:sanathdesai2006@gmail.com">Email ↗</a>
+      <!-- GITHUB PROFILE: Replace if you change account. -->
+      <a href="https://github.com/skd360" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <!-- LINKEDIN PROFILE: Replace if you change URL. -->
+      <a href="https://www.linkedin.com/in/sanathkumar-desai-926199215" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href="assets/Sanathkumar_ECE-28.pdf" target="_blank" rel="noopener noreferrer" data-i18n="resumeFooter">履歴書 ↗</a>
+    </div>
+  </div><div class="container footer-bottom">© 2026 Sanathkumar Desai · <span data-i18n="footerLine">工学ポートフォリオ</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Sanath_Sakura_Minimal_Portfolio/
+│
+├── index.html
+├── styles.css
+├── script.js
+│
+└── assets/
+    └── images/
+        ├── profile.jpg
+        ├── rover.jpg
+        ├── microphone.jpg
+        ├── mediglint.jpg
+        ├── newrro.jpg
+        ├── ota-tokyo.jpg
+        │
+        ├── 3d-printer.jpg    ← ADD THIS
+        └── cad-design.jpg    ← ADD THIS
